@@ -1,0 +1,23 @@
+
+CREATE TABLE salaries (
+emp_no INT NOT NULL,
+salary INT NOT NULL,
+sal_from_date DATE NOT NULL,
+sla_to_date DATE,
+FOREIGN KEY(emp_no) REFERENCES employee (sid) ON DELETE CASCADE,
+PRIMARY KEY(emp_no, sal_from_date)
+);
+
+INSERT INTO employee (sid) VALUES (1002);
+INSERT INTO salaries (emp_no, salary, sal_from_date) VALUES (1002, 40000000, '2017-07-01');
+
+SELECT * FROM salaries;
+
+
+select * from salaries;
+
+DELETE FROM salaries WHERE emp_no = 1002;
+
+create user jonghwa identified by passwd;
+grant connect, resource to admin;
+ 
