@@ -1,0 +1,15 @@
+create table ordertable (
+    order_no varchar(16) not null,
+    customer varchar(16) not null,
+    order_date varchar(8) not null,
+    order_price decimal(15,2) not null,
+    delivery_city varchar(256) ,
+    delivery_date varchar(8) ,
+    pay varchar(8) ,
+    sale decimal(15,2) not null,
+    point decimal(15,2) not null,
+    PRIMARY KEY (order_no)
+);
+
+
+// 주문테이블 생성
