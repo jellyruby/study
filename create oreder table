@@ -13,3 +13,8 @@ create table ordertable (
 
 
 // 주문테이블 생성
+
+
+CREATE TABLE order_table AS SELECT * FROM ordertable;
+
+// 테이블 복사
