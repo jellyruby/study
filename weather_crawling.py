@@ -41,7 +41,7 @@ text.insert(CURRENT, "")
 
 
 text.pack()
-tk.title("YUN DAE HEE")
+tk.title("JongHwa Crwaling Project")
 tk.geometry("1000x400+100+100")
 
 
